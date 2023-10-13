@@ -105,21 +105,21 @@ const Timer = () => {
     <div className="container">
       <Row>
         <Col>
-          <Row className='show-times'>
+          <Row className={styles.show-times}>
             <Col>
               <div>Work Time</div>
-              <h1>{formatTime(workTime * 60)}</h1>
+              <h1 className={seconds <= (workTime * 60 * 0.2) ? 'red' : ''}>{formatTime(workTime * 60)}</h1>
             </Col>
             <Col>
               <div>Break Time</div>
-              <h1>{formatTime(breakTime * 60)}</h1>
+              <h1 className={seconds <= (breakTime * 60 * 0.2) ? 'red' : ''}>{formatTime(breakTime * 60)}</h1>
             </Col>
             <Col>
               <div>Long Break Time</div>
-              <h1>{formatTime(longBreakTime * 60)}</h1>
+              <h1 className={seconds <= (longBreakTime * 60 * 0.2) ? 'red' : ''}>{formatTime(longBreakTime * 60)}</h1>
             </Col>
           </Row>
-          <Row className='show-cycles'>
+          <Row className={styles.show-cycles}>
             <Col>
               <div>Pomodoro Cycles</div>
               <h1>{cycles}</h1>
