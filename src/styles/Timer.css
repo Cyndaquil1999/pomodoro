@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.col {
+    margin-bottom: 30px;
+}
+
+.time-controller {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 25px;
+}
+
+.start-button {
+    background-color: green;
+    color: white;
+  }
+  
+.pause-button {
+    background-color: orange;
+    color: white;
+}
+  
+.reset-button {
+    background-color: red;
+    color: white;
+}
+  
+.show-hours div {
+    text-align: center;
+    font-size: 25px;
+}
+
+.show-hours h1 {
+    font-size: 85px;
+    text-align: center;
+}
+
+.show-hours.red {
+    color: #ff4747;
+}
+
+.show-cycles div {
+    font-size: 25px;
+    text-align: center;
+}
+
+.show-cycles h1 {
+    font-size: 60px;
+    text-align: center;
+}
