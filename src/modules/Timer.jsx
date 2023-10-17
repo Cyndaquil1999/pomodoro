@@ -165,51 +165,51 @@ const Timer = () => {
       <br />
       <Row>
         <Col>
-          <Form>
+          <Form className=''>
             <div className='time-controller'>
-              <Form.Group controlId="workTime">
-                <Form.Label>Work Time (minutes)</Form.Label>
-                <Form.Control
-                  type="range"
-                  min={1}
-                  max={60}
-                  value={workTime}
-                  onChange={handleWorkTimeChange}
-                />
-              </Form.Group>
+            <Form.Group controlId="workTime">
+              <Form.Label>Work Time (minutes)</Form.Label>
+              <Form.Control
+                type="range"
+                min={1}
+                max={60}
+                value={workTime}
+                onChange={handleWorkTimeChange}
+              />
+            </Form.Group>
 
-              <Form.Group controlId="breakTime">
-                <Form.Label>Break Time (minutes)</Form.Label>
-                <Form.Control
-                  type="range"
-                  min={1}
-                  max={60}
-                  value={breakTime}
-                  onChange={handleBreakTimeChange}
-                />
-              </Form.Group>
+            <Form.Group controlId="breakTime">
+              <Form.Label>Break Time (minutes)</Form.Label>
+              <Form.Control
+                type="range"
+                min={1}
+                max={60}
+                value={breakTime}
+                onChange={handleBreakTimeChange}
+              />
+            </Form.Group>
 
-              <Form.Group controlId="longBreakTime">
-                <Form.Label>Long Break Time (minutes)</Form.Label>
-                <Form.Control
-                  type="range"
-                  min={1}
-                  max={60}
-                  value={longBreakTime}
-                  onChange={handleLongBreakTimeChange}
-                />
-              </Form.Group>
+            <Form.Group controlId="longBreakTime">
+              <Form.Label>Long Break Time (minutes)</Form.Label>
+              <Form.Control
+                type="range"
+                min={1}
+                max={60}
+                value={longBreakTime}
+                onChange={handleLongBreakTimeChange}
+              />
+            </Form.Group>
 
-              <Form.Group controlId="cycles">
-                <Form.Label>Cycles</Form.Label>
-                <Form.Control
-                  type="range"
-                  min={1}
-                  max={10}
-                  value={cycles}
-                  onChange={handleCyclesChange}
-                />
-              </Form.Group>
+            <Form.Group controlId="cycles">
+              <Form.Label>Cycles</Form.Label>
+              <Form.Control
+                type="range"
+                min={1}
+                max={10}
+                value={cycles}
+                onChange={handleCyclesChange}
+              />
+            </Form.Group>
 
             </div>
 
